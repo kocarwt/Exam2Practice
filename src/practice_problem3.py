@@ -339,7 +339,7 @@ def run_test_practice_problem3c():
 def practice_problem3c(sequence):
     y = []
     for k in range(len(sequence)):
-        if sequence[k]== 0:
+        if sequence[k] == 0:
             y.append(k)
     return y
     """
@@ -532,7 +532,9 @@ def run_test_practice_problem3e():
 
 def practice_problem3e(sequence):
     y = 0
-    for k in range((len(sequence)//2)+1):
+    for k in range(len(sequence)):
+        if 2*k >= len(sequence):
+            return y
         y = y + sequence[0 + (2*k)]
     return y
 

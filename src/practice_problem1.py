@@ -390,9 +390,6 @@ class Box(object):
     def steal(self, other_box):
         other_box.contents = self.append_string(other_box.contents)
 
-
-
-
         """
         What comes in:
           -- self
